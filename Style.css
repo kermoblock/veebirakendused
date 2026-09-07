@@ -52,11 +52,35 @@ section#osa5{
     margin: 5px;
     width: 10%;
 }
-img{
+erapilt{
     width: 100%;
     border-radius: 40%;
     border: 5px solid burlywood;
 }
+
+#suurkast{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+#pildigalerii{
+    border: 5px solid burlywood;
+    border-radius: 10px;
+}
+#video{
+    border: 5px solid burlywood;
+    border-radius: 10px;
+}
+#muusika{
+    border: 5px solid burlywood;
+    border-radius: 10px;
+}
+#kaart{
+    border: 5px solid burlywood;
+    border-radius: 10px;
+}
+
 /*navigeermis menüü*/
 nav ul{
     list-style-type: none;
