@@ -1,0 +1,85 @@
+/*komentaar*/
+h1{
+    font-variant: small-caps;
+    font-size: xx-large;
+    color: burlywood; /*tekstivärv*/
+    background-color:transparent; /*taustavärv*/
+}
+header{
+    padding: 5%;
+    background-color: lightslategrey;
+    border-left: 3px solid burlywood;
+    border-bottom: 3px solid burlywood;
+    border-radius: 0 0 0 60px;
+    background-image: url("Fish.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+footer{
+    padding: 5%;
+    background-color: lightslategrey;
+    border-left: 3px solid burlywood;
+    border-top: 3px solid burlywood;
+    border-radius: 60px 0 0 0;
+}
+section#osa1{
+    padding: 5%;
+    border: 2px solid burlywood;
+    margin: 5px;
+    width: 25%;
+}
+section#osa2{
+    padding: 5%;
+    border: 2px solid darkseagreen;
+    margin: 5px;
+    width: 15%;
+}
+section#osa3{
+    padding: 5%;
+    border: 20px solid red;
+    margin: 15px;
+    width: 40%;
+}
+section#osa4{
+    padding: 10%;
+    border: 10px dotted darkcyan;
+    margin: 3px;
+    width: 20%;
+}
+section#osa5{
+    padding: 10%;
+    border: 15px dotted darkkhaki;
+    margin: 5px;
+    width: 10%;
+}
+img{
+    width: 100%;
+    border-radius: 40%;
+    border: 5px solid burlywood;
+}
+/*navigeermis menüü*/
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: burlywood;
+}
+nav ul li{
+    float: left;
+}
+nav ul li a{
+    display: block;
+    color: lightslategrey;
+    text-decoration: none; /*link on alljoonita */
+    text-align: center; /*teksti joondamine keskel*/
+    padding: 10px;
+    border-left: 3px solid burlywood;
+    border-radius: 50%;
+}
+nav{
+    padding: 5%;
+    margin-bottom: 20px;
+}
+nav ul li a:hover{
+    background-color: burlywood;
+}
