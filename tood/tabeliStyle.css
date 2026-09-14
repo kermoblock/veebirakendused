@@ -81,3 +81,30 @@ table#keeruline{
     background-color: yellow;
 }
 
+table#iseseisev{
+    BORDER: 1px solid green;
+    width: 50%;
+    height: 500px;
+    text-align: center;
+}
+table#iseseisev td{
+    border: 1px solid green;
+    text-align: center;
+}
+
+table#iseseisev td:nth-child(1){
+    background-color: steelblue;
+}
+
+table#iseseisev td:nth-child(2){
+    background-color: darkcyan;
+}
+
+table#iseseisev td:nth-child(3){
+    background-color: cadetblue;
+}
+
+table#iseseisev td:nth-child(4){
+    background-color: darkslateblue;
+}
+
