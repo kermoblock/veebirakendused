@@ -29,3 +29,55 @@ table#roheline td{
     border: 1px solid green;
     text-align: center;
 }
+/*pseudoelementide kasutamine*/
+/*1.rida 1.lahter*/
+#sinine tr:nth-child(1) td:nth-child(1){
+    background-color: red;
+}
+/*1.rida 2.lahter*/
+#sinine tr:nth-child(1) td:nth-child(2){
+    background-color: yellow;
+}
+/*2.rida */
+#sinine tr:nth-child(2) {
+    background-color: gray;
+}
+
+table#keeruline{
+    BORDER: 1px solid green;
+    width: 50%;
+    height: 150px;
+    text-align: center;
+}
+
+#keeruline tr:nth-child(1) td:nth-child(1){
+    background-color: green;
+}
+#keeruline tr:nth-child(1) td:nth-child(2){
+    background-color: green;
+}
+
+#keeruline tr:nth-child(2) td:nth-child(1){
+    background-color: pink;
+}
+#keeruline tr:nth-child(2) td:nth-child(2){
+    background-color: pink;
+}
+
+#keeruline tr:nth-child(3) td:nth-child(1){
+    background-color: brown;
+}
+#keeruline tr:nth-child(3) td:nth-child(2){
+    background-color: brown;
+}
+#keeruline tr:nth-child(3) td:nth-child(3){
+    background-color: brown;
+}
+
+#keeruline tr:nth-child(4) td:nth-child(1){
+    background-color: yellow;
+}
+#keeruline tr:nth-child(4) td:nth-child(2){
+    background-color: yellow;
+}
+
