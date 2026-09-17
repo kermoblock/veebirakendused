@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <title>Map area kasutamine</title>
+    <link rel="stylesheet" href="mapStyle.css">
+</head>
+<body>
+<h1>Lehel on kasutatud map area käsud</h1>
+<h2>palun kliki hiirega erineva alale pildil</h2>
+<img src="maja.png" alt="maja" usemap="#majakaart">
+<!-- kasutame mapi (kaart) -->
+<map name="majakaart">
+    <!-- ring -circle coords= x, y, R -->
+    <area shape="circle" coords="147,201,50" href="aken.html" alt="aken">
+    <!-- ristküülik rect coords=x, y, x1, y2 -->
+    <area shape="rect" coords="76,227,109,281" href="uks.html" alt="uks">
+    <!-- mitu nurga polügoon -poly coords=x,y, x1, y1, x2, y2-kolmnurk -->
+    <area shape="poly" coords="54,117,143,18,233,124" href="katus.html" alt="katus">
+
+
+    <area shape="rect" coords="57,121,237,275" href="tuba.html" alt="tuba">
+    <area shape="circle" coords="242,48,30" href="paike.html" alt="paike">
+    <area shape="poly" coords="77,284,138,299,277,283" href="muru.html" alt="muru">
+
+</map>
+<div id="selgitus">
+    Vajuta pidliala peale ja siia tuleb väike kirjeldus...
+</div>
+</body>
+</html>
