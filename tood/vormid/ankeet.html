@@ -108,10 +108,46 @@
 
         <tr>
             <td>
-
+                <label for="aeg">Mis ajal päevast te tavaliselt trenni teete?</label>
             </td>
             <td>
-                <input type="">
+                <input type="time" id="aeg" name="aeg">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="range">Skaalal 1-100, kui palju pingutate igakord, kui teete trenni</label>
+            </td>
+            <td>
+                <input type="range" id="range" name="range" min="0" max="100">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="mon"> Mis kuul aastas, teete kõige rohkem trenni?</label>
+            </td>
+            <td>
+                <input type="month" id="mon" name="mon" min="2026" max="2026">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="email">Siesta oma Email:</label>
+            </td>
+            <td>
+                <input type="email" name="email" id="email" >
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="file">Näidake pilti endast</label>
+            </td>
+            <td>
+                <input type="file" id="file" name="file">
             </td>
         </tr>
     </table>
