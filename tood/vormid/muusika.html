@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <title>Muusika</title>
+    <script src="../js/muusikaScript.js"></script>
+</head>
+<body>
+<form action="#">
+    <table border="1">
+        <tr>
+            <td colspan="2">
+                <fieldset>
+                    <legend>
+                        <strong>Muusikud:</strong>
+                    </legend>
+                    <br>
+                    <input type="checkbox" name="muusikud" id="KanyeWest" value="KanyeWest" onchange="Muusikud()">
+                    <label for="KanyeWest">Kanye West</label>
+                    <br>
+                    <input type="checkbox" name="muusikud" id="Diddy" value="Diddy" onchange="Muusikud()">
+                    <label for="Diddy">Diddy</label>
+                    <br>
+                    <input type="checkbox" name="muusikud" id="LaurynHill" value="LaurynHill" onchange="Muusikud()">
+                    <label for="LaurynHill">Lauryn Hill</label>
+                    <br>
+                    <input type="checkbox" name="muusikud" id="Creo" value="Creo" onchange="Muusikud()">
+                    <label for="Creo">Creo</label>
+                    <br>
+                    <input type="checkbox" name="muusikud" id="JayZ" value="JayZ" onchange="Muusikud()">
+                    <label for="JayZ">Jay-Z</label>
+                </fieldset>
+            </td>
+            <td>
+                <div id="vastus1">
+
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <!--tekstikast -->
+                <label for="nimi">Mida arvad muusika kuulamisest koolis?:</label>
+            </td>
+            <td>
+                <input type="text" id="nimi" oninput="kool()">
+            </td>
+            <td>
+                <div id="vastus2">
+
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <!-- arvud number -->
+                <label>Mitu tundi päevas kuulad muusikat?</label>
+            </td>
+            <td>
+                <input type="number" min="0" max="24" step="1" value="0" id="tund" onclick="muusikatunnid()">
+            </td>
+            <td>
+                <div id="vastus3"></div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label>Kas sa kuulad radiot?</label>
+            </td>
+            <td>
+                <input type="radio" id="Ja" name="radio" onclick="raadiokuulamine()">
+                <label for="Ja">Ja</label>
+
+                <input type="radio" id="Ei" name="radio" onclick="raadiokuulamine()">
+                <label for="Ei">Ei</label>
+            </td>
+            <td>
+                <div id="vastus4"></div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label>Millised raadiojaamu oskad nimetada</label>
+            </td>
+            <td>
+                <input type="text" id="radiojaam" oninput="Raadiojaam()">
+            </td>
+            <td>
+                <div id="vastus5"></div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label>Millist muusikat sa kõige rohkem kuulad</label>
+            </td>
+            <td>
+                <input type="radio" name="stiil" id="Pop" value="Pop">
+                <label for="Pop">Pop</label>
+                <br>
+                <input type="radio" name="stiil" id="Rock" value="Rock">
+                <label for="Rock">Rock</label>
+                <br>
+                <input type="radio" name="stiil" id="Räpp" value="Räpp">
+                <label for="Räpp">Räpp</label>
+                <br>
+                <input type="radio" name="stiil" id="Klassikaline" value="Klassikaline">
+                <label for="Klassikaline">Klassikaline</label>
+                <br>
+                <input type="radio" name="stiil" id="Jazz" value="Jazz">
+                <label for="Jazz">Jazz</label>
+                <br>
+                <input type="radio" name="stiil" id="Elektrooniline" value="Elektrooniline">
+                <label for="Elektrooniline">Elektrooniline</label>
+            </td>
+            <td>
+                <div id="vastus6"></div>
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
