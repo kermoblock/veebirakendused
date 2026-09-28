@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Vormid ja nupud HTML keeles</title>
+    <script src="../js/ankeetScript.js"></script>
 </head>
 <body>
 <h1>Sportlase ankeet</h1>
@@ -14,7 +15,12 @@
                 <label for="nimi">Sisesta oma nimi:</label>
             </td>
             <td>
-                <input type="text" id="nimi">
+                <input type="text" id="nimi" oninput="nimiLugemine()">
+            </td>
+            <td>
+                <div id="vastus">
+
+                </div>
             </td>
         </tr>
 
@@ -26,14 +32,19 @@
             </td>
             <td>
                 <!-- radionupp - ainult üks valik on õige -->
-                <input type="radio" name="sugu" id="naine">
+                <input type="radio" name="sugu" id="naine" value="naine" onclick="suguValik()">
                 <label for="naine">naine</label>
                 <br>
-                <input type="radio" name="sugu" id="mees">
+                <input type="radio" name="sugu" id="mees" value="mees" onclick="suguValik()">
                 <label for="mees">mees</label>
                 <br>
-                <input type="radio" name="sugu" id="muu">
+                <input type="radio" name="sugu" id="muu" value="muu" onclick="suguValik()">
                 <label for="muu">muu</label>
+            </td>
+            <td>
+                <div id="vastus2">
+
+                </div>
             </td>
         </tr>
 
@@ -44,21 +55,26 @@
                         <strong>Spordialad:</strong>
                     </legend>
                     <br>
-                    <input type="checkbox" name="spordiala" id="jooksmine">
+                    <input type="checkbox" name="spordiala" id="jooksmine" value="jooksmine" onchange="sportValik()">
                     <label for="jooksmine">jooksmine</label>
                     <br>
-                    <input type="checkbox" name="spordiala" id="ujumine">
+                    <input type="checkbox" name="spordiala" id="ujumine" value="ujumine" onchange="sportValik()">
                     <label for="ujumine">ujumine</label>
                     <br>
-                    <input type="checkbox" name="spordiala" id="uisutamine">
+                    <input type="checkbox" name="spordiala" id="uisutamine" value="uisutamine" onchange="sportValik()">
                     <label for="uisutamine">uisutamine</label>
                     <br>
-                    <input type="checkbox" name="spordiala" id="suusatamine">
+                    <input type="checkbox" name="spordiala" id="suusatamine" value="suusatamine" onchange="sportValik()">
                     <label for="suusatamine">suusatamine</label>
                     <br>
-                    <input type="checkbox" name="spordiala" id="jalgpall">
+                    <input type="checkbox" name="spordiala" id="jalgpall" value="jalgpall" onchange="sportValik()">
                     <label for="jalgpall">jalgpall</label>
                 </fieldset>
+            </td>
+            <td>
+                <div id="vastus3">
+
+                </div>
             </td>
         </tr>
 
@@ -150,8 +166,20 @@
                 <input type="file" id="file" name="file">
             </td>
         </tr>
-    </table>
+        <tr>
+            <td>
+                <input type="reset" value="Puhasta" onclick="puhasta()">
+            </td>
+            <td>
+                <input type="button" value="Näita andmed" onclick="tervitus()">
+            </td>
+            <td>
+                <div id="vastus4">
 
+                </div>
+            </td>
+        </tr>
+    </table>
 </form>
 
 </body>
