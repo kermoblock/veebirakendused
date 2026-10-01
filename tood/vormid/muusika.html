@@ -71,54 +71,74 @@
                 <label>Kas sa kuulad radiot?</label>
             </td>
             <td>
-                <input type="radio" id="Ja" name="radio" onclick="raadiokuulamine()">
+                <input type="radio" name="valik" id="Ja" value="Ja"  onclick="raadiokuulamine()">
                 <label for="Ja">Ja</label>
 
-                <input type="radio" id="Ei" name="radio" onclick="raadiokuulamine()">
+                <input type="radio" name="valik" id="Ei" value="Ei"  onclick="raadiokuulamine()">
                 <label for="Ei">Ei</label>
             </td>
             <td>
-                <div id="vastus4"></div>
+                <div id="vastus4">
+
+                </div>
             </td>
         </tr>
 
         <tr>
             <td>
-                <label>Millised raadiojaamu oskad nimetada</label>
+                <label for="radiojaam">Millised raadiojaamu oskad nimetada</label>
             </td>
             <td>
-                <input type="text" id="radiojaam" oninput="Raadiojaam()">
+                <input type="text" id="radiojaam" oninput="raadioJaam()">
             </td>
             <td>
-                <div id="vastus5"></div>
+                <div id="vastus5">
+
+                </div>
             </td>
         </tr>
 
         <tr>
             <td>
-                <label>Millist muusikat sa kõige rohkem kuulad</label>
+                <label>Millist muusika stiile sulle meeldib kuulata</label>
             </td>
             <td>
-                <input type="radio" name="stiil" id="Pop" value="Pop">
-                <label for="Pop">Pop</label>
+                <input type="checkbox" name="stiil" id="pop" value="pop" onchange="muusikastiilid()">
+                <label for="pop">Pop</label>
                 <br>
-                <input type="radio" name="stiil" id="Rock" value="Rock">
-                <label for="Rock">Rock</label>
+                <input type="checkbox" name="stiil" id="rock" value="rock" onchange="muusikastiilid()">
+                <label for="rock">Rock</label>
                 <br>
-                <input type="radio" name="stiil" id="Räpp" value="Räpp">
-                <label for="Räpp">Räpp</label>
+                <input type="checkbox" name="stiil" id="rapp" value="rapp" onchange="muusikastiilid()">
+                <label for="rapp">Räpp</label>
                 <br>
-                <input type="radio" name="stiil" id="Klassikaline" value="Klassikaline">
-                <label for="Klassikaline">Klassikaline</label>
+                <input type="checkbox" name="stiil" id="klassikaline" value="klassikaline" onchange="muusikastiilid()">
+                <label for="klassikaline">Klassikaline</label>
                 <br>
-                <input type="radio" name="stiil" id="Jazz" value="Jazz">
-                <label for="Jazz">Jazz</label>
+                <input type="checkbox" name="stiil" id="jazz" value="jazz" onchange="muusikastiilid()">
+                <label for="jazz">Jazz</label>
                 <br>
-                <input type="radio" name="stiil" id="Elektrooniline" value="Elektrooniline">
-                <label for="Elektrooniline">Elektrooniline</label>
+                <input type="checkbox" name="stiil" id="elektrooniline" value="elektrooniline" onchange="muusikastiilid()">
+                <label for="elektrooniline">Elektrooniline</label>
             </td>
             <td>
-                <div id="vastus6"></div>
+                <div id="vastus6">
+
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <input type="reset" value="Puhasta" onclick="puhasta()">
+            </td>
+            <td>
+                <input type="button" value="Näita andmed" onclick="tervitus()">
+            </td>
+            <td>
+                <div id="vastus7">
+
+                </div>
             </td>
         </tr>
     </table>

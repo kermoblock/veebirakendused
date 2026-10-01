@@ -50,7 +50,7 @@ function muusikatunnid(){
 function raadiokuulamine(){
     let Ja=document.getElementById("Ja");
     let Ei=document.getElementById("Ei");
-    let vastus4=document.getElementById("Vastus4");
+    let vastus4=document.getElementById("vastus4");
 
     let valik="";
     if(Ja.checked){
@@ -64,5 +64,81 @@ function raadiokuulamine(){
     }
     vastus4.innerHTML="Kas sa kuulad raadiot: " + valik;
 
-    return valik;
+    return valik.value;
+}
+
+function raadioJaam(){
+    let vastus5=document.getElementById("vastus5");
+    let radiojaam=document.getElementById("radiojaam");
+
+    vastus5.innerHTML="Nimetatud raadiojaamad: " + radiojaam.value;
+
+    return radiojaam.value;
+}
+
+function muusikastiilid(){
+
+    let vastus6=document.getElementById("vastus6");
+    let pop=document.getElementById("pop");
+    let rock=document.getElementById("rock");
+    let rapp=document.getElementById("rapp")
+    let klassikaline=document.getElementById("klassikaline");
+    let jazz=document.getElementById("jazz");
+    let elektrooniline=document.getElementById("elektrooniline");
+
+    let stiil=""
+    if(pop.checked){
+        stiil+=pop.value + ", ";
+    }
+    if(rock.checked){
+        stiil+=rock.value + ", ";
+    }
+    if(rapp.checked){
+        stiil+=rapp.value + ", ";
+    }
+    if(klassikaline.checked){
+        stiil+=klassikaline.value + ", ";
+    }
+    if(jazz.checked){
+        stiil+=jazz.value + ", ";
+    }
+    if(elektrooniline.checked){
+        stiil+=elektrooniline.value + ", ";
+    }
+    if(stiil==""){
+        stiil = "vali mingi stiil";
+    }
+    vastus6.innerHTML=stiil;
+    return stiil;
+}
+
+function tervitus(){
+    let vastus7=document.getElementById("vastus7");
+    let muusika = Muusikud();
+    let nimi = kool();
+    let tund = muusikatunnid();
+    let valik = raadiokuulamine();
+    let raadiojaam = raadiokuulamine();
+    let stiil = muusikastiilid();
+
+
+
+    vastus7.innerHTML="Valitud muusikud on "+muusika+"<br>"
+        +"Arvamus muusika kuulamisest koolis: "+nimi+"<br>"
+        +"Kuulad päevas nii palju tunde muusikat: "+tund+"<br>"
+        +"Kas sa kuulad raadiot: "+valik+"<br>"
+        +"Nimetatud raadiojaamad: "+raadiojaam+"<br>"
+        +"Meeldivad muusika stiilid: "+stiil;
+    vastus7.style.backgroundColor="yellow";
+}
+
+
+function puhasta(){
+    vastus1.innerHTML="";
+    vastus2.innerHTML="";
+    vastus3.innerHTML="";
+    vastus4.innerHTML="";
+    vastus5.innerHTML="";
+    vastus6.innerHTML="";
+    vastus7.innerHTML="";
 }
