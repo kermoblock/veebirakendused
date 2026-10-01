@@ -62,7 +62,7 @@ function raadiokuulamine(){
     else{
         valik="palun tee valik";
     }
-    vastus4.innerHTML="Kas sa kuulad raadiot: " +valik;
+    vastus4.innerHTML="Kas sa kuulad raadiot: " + valik;
 
     return valik;
 }

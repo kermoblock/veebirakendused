@@ -67,22 +67,39 @@ function sportValik(){
     return sport;
 }
 
+function klubiValik(){
+    let vastus5=document.getElementById("vastus5");
+    let klubi=document.getElementById("klubi");
+
+    //1. rida loenids - see on 0.rida
+    if(klubi.selectedIndex !== 0){
+        vastus5.innerHTML="Valitud spordiklub on "+ klubi.value;
+        vasstus5.style.color="red";
+    }
+    return klubi.value;
+
+}
+
 function tervitus(){
     let vastus4=document.getElementById("vastus4");
     let nimi= nimiLugemine();
     let sugu = suguValik();
     let spordiala = sportValik();
+    let klubi = klubiValik();
 
     vastus4.innerHTML="Sisestatud nimi on "+nimi+"<br>"
         +"Valitud sugu on "+sugu+"<br>"
-        +"Valitud spordialad: "+spordiala;
+        +"Valitud spordialad: "+spordiala+"<br>"
+        + "Valitud klub: "+klubi;
     vastus4.style.backgroundColor="yellow";
 }
+
 
 function puhasta(){
     vastus.innerHTML="";
     vastus2.innerHTML="";
     vastus3.innerHTML="";
     vastus4.innerHTML="";
+    vastus5.innerHTML="";
 }
 
