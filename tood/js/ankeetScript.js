@@ -74,10 +74,30 @@ function klubiValik(){
     //1. rida loenids - see on 0.rida
     if(klubi.selectedIndex !== 0){
         vastus5.innerHTML="Valitud spordiklub on "+ klubi.value;
-        vasstus5.style.color="red";
+        vastus5.style.color="red";
     }
     return klubi.value;
 
+}
+
+function kuupaevValik(){
+    let vastus6=document.getElementById("vastus6");
+    let kuupaev=document.getElementById("kuupaev");
+
+    vastus6.innerHTML="Viimane külastus oli "+ kuupaev.value;
+    vastus6.style.color="blue";
+
+    return kuupaev.value;
+}
+
+function rangeValik(){
+    let vastus7=document.getElementById("vastus7");
+    let kogemus=document.getElementById("kogemus");
+
+    vastus7.innerHTML="Sa valisid treeningu kogemuseks: "+ kogemus.value;
+    vastus7.style.color="pink";
+
+    return kogemus.value;
 }
 
 function tervitus(){
@@ -86,11 +106,15 @@ function tervitus(){
     let sugu = suguValik();
     let spordiala = sportValik();
     let klubi = klubiValik();
+    let kuupaev = kuupaevValik();
+    let kogemus = rangeValik();
 
     vastus4.innerHTML="Sisestatud nimi on "+nimi+"<br>"
         +"Valitud sugu on "+sugu+"<br>"
         +"Valitud spordialad: "+spordiala+"<br>"
-        + "Valitud klub: "+klubi;
+        + "Valitud klub: "+klubi+"<br>"
+        +"Valitud kuupaev: "+kuupaev+"<br>"
+        +"Valitud kogemus: "+kogemus;
     vastus4.style.backgroundColor="yellow";
 }
 
@@ -101,5 +125,7 @@ function puhasta(){
     vastus3.innerHTML="";
     vastus4.innerHTML="";
     vastus5.innerHTML="";
+    vastus6.innerHTML="";
+    vastus7.innerHTML="";
 }
 
