@@ -1,0 +1,32 @@
+img{
+    width:200px;
+    border: 2pt solid green;
+    border-radius: 50%;
+}
+input[type=radio]{
+    accent-color: red;
+}
+input[type=button]{
+    width:20%;
+    border: 2pt solid green;
+    padding: 1%;
+    background-color: lightgreen;
+    border-radius: 10px;
+}
+div{
+    width:20%;
+    border: 2pt solid green;
+    padding: 1%;
+    background-color: lightgreen;
+    border-radius: 10px;
+}
+label{
+    font-weight: bold;
+    padding: 1%;
+    margin: 1%;
+}
+label:hover{
+    background-color: lightgreen;
+    border: 2pt solid green;
+    border-radius: 10px;
+}
