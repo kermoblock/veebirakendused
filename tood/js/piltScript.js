@@ -13,6 +13,8 @@ function randomPilt() {
     const randomPilt=document.getElementById("randomPilt");
 
     randomPilt.src=rpilt;
+    vastus.innerHTML="Siia tuleb vastus";
+    vastus.style.color="black";
 }
 
 function radioValik(){

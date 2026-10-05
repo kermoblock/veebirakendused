@@ -1,3 +1,8 @@
+body{
+    font-family: Georgia, serif;
+    background-color: cadetblue;
+
+}
 img{
     width:200px;
     border: 2pt solid green;
@@ -12,21 +17,29 @@ input[type=button]{
     padding: 1%;
     background-color: lightgreen;
     border-radius: 10px;
+    font-family: Georgia, serif;
 }
-div{
+div#vastus{
     width:20%;
     border: 2pt solid green;
     padding: 1%;
     background-color: lightgreen;
     border-radius: 10px;
+    position: absolute;
+    left: 200px;
+    top: 300px;
 }
 label{
     font-weight: bold;
-    padding: 1%;
+    padding: 2px;
     margin: 1%;
 }
 label:hover{
     background-color: lightgreen;
     border: 2pt solid green;
     border-radius: 10px;
+}
+
+h1{
+
 }
