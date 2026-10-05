@@ -4,12 +4,19 @@
     <meta charset="UTF-8">
     <title>Muusika</title>
     <script src="../js/muusikaScript.js"></script>
+    <link rel="stylesheet" href="muusikaStyle.css">
+
 </head>
 <body>
 <form action="#">
     <table border="1">
         <tr>
-            <td colspan="2">
+            <td>
+                <h1>Muusika Ankeet</h1>
+            </td>
+        </tr>
+        <tr>
+          <td colspan="2">
                 <fieldset>
                     <legend>
                         <strong>Muusikud:</strong>
@@ -32,7 +39,7 @@
                 </fieldset>
             </td>
             <td>
-                <div id="vastus1">
+                <div id="vastus1" class="vastus">
 
                 </div>
             </td>
@@ -47,7 +54,7 @@
                 <input type="text" id="nimi" oninput="kool()">
             </td>
             <td>
-                <div id="vastus2">
+                <div id="vastus2" class="vastus">
 
                 </div>
             </td>
@@ -62,7 +69,7 @@
                 <input type="number" min="0" max="24" step="1" value="0" id="tund" onclick="muusikatunnid()">
             </td>
             <td>
-                <div id="vastus3"></div>
+                <div id="vastus3" class="vastus"></div>
             </td>
         </tr>
 
@@ -71,14 +78,14 @@
                 <label>Kas sa kuulad radiot?</label>
             </td>
             <td>
-                <input type="radio" name="valik" id="Ja" value="Ja"  onclick="raadiokuulamine()">
-                <label for="Ja">Ja</label>
+                <input type="radio" name="valik" id="Jah" value="Jah"  onclick="raadiokuulamine()">
+                <label for="Jah">Jah</label>
 
                 <input type="radio" name="valik" id="Ei" value="Ei"  onclick="raadiokuulamine()">
                 <label for="Ei">Ei</label>
             </td>
             <td>
-                <div id="vastus4">
+                <div id="vastus4" class="vastus">
 
                 </div>
             </td>
@@ -92,7 +99,7 @@
                 <input type="text" id="radiojaam" oninput="raadioJaam()">
             </td>
             <td>
-                <div id="vastus5">
+                <div id="vastus5" class="vastus">
 
                 </div>
             </td>
@@ -122,7 +129,7 @@
                 <label for="elektrooniline">Elektrooniline</label>
             </td>
             <td>
-                <div id="vastus6">
+                <div id="vastus6" class="vastus">
 
                 </div>
             </td>
@@ -133,10 +140,10 @@
                 <input type="reset" value="Puhasta" onclick="puhasta()">
             </td>
             <td>
-                <input type="button" value="Näita andmed" onclick="tervitus()">
+                <input type="button" value="Näita andmed" onclick="saada()">
             </td>
             <td>
-                <div id="vastus7">
+                <div id="vastus7" class="vastus">
 
                 </div>
             </td>

@@ -48,13 +48,13 @@ function muusikatunnid(){
 }
 
 function raadiokuulamine(){
-    let Ja=document.getElementById("Ja");
+    let Jah=document.getElementById("Jah");
     let Ei=document.getElementById("Ei");
     let vastus4=document.getElementById("vastus4");
 
     let valik="";
-    if(Ja.checked){
-        valik=Ja.value;
+    if(Jah.checked){
+        valik=Jah.value;
     }
     else if(Ei.checked){
         valik=Ei.value;
@@ -64,7 +64,7 @@ function raadiokuulamine(){
     }
     vastus4.innerHTML="Kas sa kuulad raadiot: " + valik;
 
-    return valik.value;
+    return valik;
 }
 
 function raadioJaam(){
@@ -75,6 +75,8 @@ function raadioJaam(){
 
     return radiojaam.value;
 }
+
+
 
 function muusikastiilid(){
 
@@ -112,13 +114,13 @@ function muusikastiilid(){
     return stiil;
 }
 
-function tervitus(){
+function saada(){
     let vastus7=document.getElementById("vastus7");
     let muusika = Muusikud();
     let nimi = kool();
     let tund = muusikatunnid();
     let valik = raadiokuulamine();
-    let raadiojaam = raadiokuulamine();
+    let raadiojaam = raadioJaam();
     let stiil = muusikastiilid();
 
 
@@ -129,7 +131,6 @@ function tervitus(){
         +"Kas sa kuulad raadiot: "+valik+"<br>"
         +"Nimetatud raadiojaamad: "+raadiojaam+"<br>"
         +"Meeldivad muusika stiilid: "+stiil;
-    vastus7.style.backgroundColor="yellow";
 }
 
 
