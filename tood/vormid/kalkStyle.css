@@ -1,0 +1,30 @@
+section#osa1{
+    border: 1pt solid black;
+    border-radius: 10pt;
+    padding: 10pt;
+    width: 30%;
+}
+img#pilt{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+select option {
+    background-color: teal;
+    color: darkblue;
+}
+select{
+    border-radius: 15px;
+    text-align: right;
+}
+input[type=number]{
+    border-radius: 15px;
+    padding: 10px;
+    text-align: right;
+}
+label:hover{
+    background-color: lightsteelblue;
+    border-radius: 10px;
+    border: 1pt solid black;
+    padding: 2px;
+}
