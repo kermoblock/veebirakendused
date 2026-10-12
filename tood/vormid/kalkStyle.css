@@ -4,6 +4,12 @@ section#osa1{
     padding: 10pt;
     width: 30%;
 }
+section#osa2{
+    border: 1pt solid black;
+    border-radius: 10pt;
+    padding: 10pt;
+    width: 40%;
+}
 img#pilt{
     border-radius: 50%;
     width: 100px;
