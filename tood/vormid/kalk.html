@@ -5,6 +5,10 @@
     <title>Saia kalkulaator</title>
     <script src="../js/saiakalkScript.js"></script>
     <script src="../js/tempKalk.js"></script>
+    <script src="../js/valuutaKalk.js"></script>
+    <script src="../js/Vanuskalk.js"></script>
+
+
     <link rel="stylesheet" href="kalkStyle.css">
 </head>
 <body>
@@ -27,6 +31,7 @@
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPJ5yZ5TSfv4ZnNpx4XZYgADEIbohxG8I-GeNkvLOYwA&s=10" alt="" id="pilt" width="100" height="100">
     <div id="vastus"></div>
 </section>
+
 <section id="osa2">
     <h2>Temperatuuri kalkulaator</h2>
     <label for="temp">Sisesta temperatuuri</label>
@@ -44,6 +49,28 @@
     <div id="vastus2"></div>
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6mvwaRAZyuInMf3BrxvWGwKF7WWVMiJOXAOQvSRpCmQ&s=10" alt="">
 </section>
+
+<section id="osa3">
+    <h2>Valuuta kalkukaator</h2>
+    <label for="valuuta">Kirjuta kuhu teiseldame</label>
+    (dollar, juann, krona, ruble)
+    <input type="text" id="valuuta" name="valuuta">
+    <br>
+    <label for="euro">Sisesta summa eurodes</label>
+    <input type="number" id="euro" min="1" max="10" step="1" onchange="valuutaKalk()">
+
+    <div id="vastus3"></div>
+</section>
+
+    <section id="osa4">
+        <h2>Vanusekalkulaator</h2>
+        <label for="synniaasta">Sisesta oma sünniaasta:</label>
+        <input type="number" id="synniaasta" >
+
+        <button onclick="arvutaVanus()">Arvuta vanus</button>
+
+        <div id="vastus4"></div>
+    </section>
 </section>
 </body>
 </html>
