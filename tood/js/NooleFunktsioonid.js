@@ -17,10 +17,10 @@
 //     console.log(element);
 // });
 
-const array = [1, 2, 3, 4, 5];
-
-array.forEach(function(element, index, array) {
-    console.log("Element:", element);
-    console.log("Index:", index);
-    console.log("Array:", array);
-});
+// const array = [1, 2, 3, 4, 5];
+//
+// array.forEach(function(element, index, array) {
+//     console.log("Element:", element);
+//     console.log("Index:", index);
+//     console.log("Array:", array);
+// });
